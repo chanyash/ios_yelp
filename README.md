@@ -31,4 +31,4 @@ Time spent: 15
 
 ### Walkthrough
 
-![Video Walkthrough](...)
+![Video Walkthrough](record1.gif)
