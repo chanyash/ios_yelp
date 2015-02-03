@@ -15,9 +15,13 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    self.window.rootViewController = [[MainViewController alloc] init];
+    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[MainViewController alloc] init]];
     
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:175.0f/255.0f green:6.0f/255.0f blue:6.0f/255.0f alpha:0.5f]];
+    [[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor], NSForegroundColorAttributeName, nil]];
+    
     [self.window makeKeyAndVisible];
     return YES;
 }
